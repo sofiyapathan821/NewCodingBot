@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Our Pricing Plans</h1>
+    </header>
+    <main>
+        <section class="pricing">
+            <div class="pricing-plan">
+                <h2>Basic</h2>
+                <p id="price1" ><font size=5 color="green">$19.99/Month</font></p>
+                <ul>
+                   <li>Netflix</li>
+                    <li>Amazon Prime Video</li>
+                    <li>Disney+ Hotstar</li>
+                </ul>
+                <button>Select</button>
+            </div>
+            <div class="pricing-plan">
+                <h2>Standard</h2>
+                <p id="price2" ><font size=5 color="green">$49.99/Month</font></p>
+                <ul>
+                     <li>Netflix</li>
+                    <li>Amazon Prime Video</li>
+                    <li>Disney+ Hotstar</li>
+                </ul>
+                <button>Select</button>
+            </div>
+            <div class="pricing-plan">
+                <h2>Premium</h2>
+                <p id ="price3" ><font size=5 color="green">$99.99/Month</font></p>
+                <ul>
+                    <li>Netflix</li>
+                    <li>Amazon Prime Video</li>
+                    <li>Disney+ Hotstar</li>
+                </ul>
+                <button>Select</button>
+            </div>
+        </section>
+        <div class="controls">
+            <label for="billing-cycle">Billing Cycle:</label>
+            <select id="bc" onChange="sofi()">
+                <option value="monthly">Monthly</option>
+                <option value="yearly">Yearly</option>
+            </select>
+            <label for="currency">Currency:</label>
+            <select id="currency">
+                <option value="$">USD ($)</option>
+                <option value="€">EUR (€)</option>
+                <option value="£">GBP (£)</option>
+            </select>
+        </div>
+    </main>
+   
+</body>
+<script language="JavaScript">
+function sofi()
+ {
+       
+   x=document.getElementById("bc").value;
+      
+    if(x=="yearly")
+       {
+          document.getElementById("price1").style.color = "green";
+           document.getElementById("price1").style.fontSize ="x-large";
+         
+          document.getElementById("price1").innerHTML="$499.99/Year";
+  	document.getElementById("price2").style.fontSize ="x-large";
+ 	  document.getElementById("price2").style.color = "green";
+          document.getElementById("price2").innerHTML="$799.99/Year";
+          document.getElementById("price3").style.color = "green";
+ 	 document.getElementById("price3").style.fontSize ="x-large";
+          document.getElementById("price3").innerHTML="$999.99/Year";
+          
+         }
+           else
+              {
+                 
+                  document.getElementById("price1").innerHTML="$19.99/Month";
+                  document.getElementById("price2").innerHTML="$49.99/Month";
+         	  document.getElementById("price3").innerHTML="$99.99/Month";
+              }
+        }
+
+     </script>
+ 
+       
+  
+       {
+          document.getElementById("price1").style.color = "green";
+           document.getElementById("price1").style.fontSize ="x-large";
+         
+          document.getElementById("price1").innerHTML="€499.99/Year";
+  	document.getElementById("price2").style.fontSize ="x-large";
+ 	  document.getElementById("price2").style.color = "green";
+          document.getElementById("price2").innerHTML="€799.99/Year";
+          document.getElementById("price3").style.color = "green";
+ 	 document.getElementById("price3").style.fontSize ="x-large";
+          document.getElementById("price3").innerHTML="€999.99/Year";
+          
+         }
+           else
+              {
+                 
+                  document.getElementById("price1").innerHTML="€19.99/Month";
+                  document.getElementById("price2").innerHTML="€49.99/Month";
+         	  document.getElementById("price3").innerHTML="€99.99/Month";
+              }
+          }
+</script>
+     
+
+
+              
+
+
+              
+
+
+</html>
+  
+       
+
+    
+              

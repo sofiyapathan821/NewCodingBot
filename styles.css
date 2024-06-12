@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+h1 {
+    margin: 0;
+}
+
+.pricing {
+    display: flex;
+    justify-content: space-around;
+    margin: 2em 0;
+}
+
+.pricing-plan {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 1em;
+    width: 25%;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.pricing-plan h2 {
+    margin-top: 0;
+}
+
+.price {
+    font-size: 2em;
+    color: #4CAF50;
+}
+
+.price span {
+    font-size: 0.5em;
+    color: #888;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    padding: 0.5em 0;
+    border-bottom: 1px solid #ddd;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.controls {
+    text-align: center;
+    margin: 2em 0;
+}
+
+.controls label, .controls select {
+    margin: 0 1em;
+    font-size: 1.2em;
+}
